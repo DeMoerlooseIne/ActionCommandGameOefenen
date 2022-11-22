@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ActionCommandGame.Extensions\ActionCommandGame.Extensions.csproj" />
+    <ProjectReference Include="..\ActionCommandGame.Model\ActionCommandGame.Model.csproj" />
+    <ProjectReference Include="..\ActionCommandGame.Repository\ActionCommandGame.Repository.csproj" />
+    <ProjectReference Include="..\ActionCommandGame.Services.Abstractions\ActionCommandGame.Services.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
