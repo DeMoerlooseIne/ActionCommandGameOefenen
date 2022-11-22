@@ -12,6 +12,7 @@
     "ActionCommandGame.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
+      //change launchbrowser to true
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:7237;http://localhost:5237",
