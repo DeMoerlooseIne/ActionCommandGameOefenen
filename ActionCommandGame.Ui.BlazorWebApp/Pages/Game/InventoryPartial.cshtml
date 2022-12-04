@@ -1,0 +1,36 @@
+﻿@model ActionCommandGame.Services.Model.Results.PlayerItemResult
+@{
+    var name = string.Join(" ", @Model.Name.Split("_"));
+}
+<div class="col-lg-4 col-md-6 my-lg-0 my-3"><a class="hyperlink"asp-action="Buy" asp-route-id="@Model.Id">
+    <div class="box" >
+        <div class="d-flex align-items-center">
+            <div class="rounded-circle mx-3 text-center d-flex align-items-center justify-content-center blue"> <img src="" alt="@Model.Name"> </div>
+            <div class="d-flex flex-column">
+
+                <p class="yellowText shopName">@name</p>
+                @if (@Model.RemainingAttack is not 0)
+                {
+                    <p class="prices">@Model.RemainingAttack Attack Remaining</p>
+                }
+                @if (@Model.RemainingDefense is not 0)
+                {
+                    <p class="prices">@Model.RemainingDefense Defense Remaining</p>
+                }
+                @if (@Model.RemainingFuel is not 0)
+                {
+                    <p class="prices">@Model.RemainingFuel Fuel Remaining</p>
+                }
+                
+                
+                @if((@Model.Description != null ))
+                {
+                    <p class="description">@Model.Description</p>
+                }
+                
+            </div>
+        </div>
+    </div></a> 
+</div>
+
+   

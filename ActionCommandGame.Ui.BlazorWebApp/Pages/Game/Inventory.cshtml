@@ -1,0 +1,21 @@
+﻿
+@model PlayerAction
+@{
+    ViewData["Title"] = "Inventory";
+    
+
+}
+<partial name="PlayerHeaderPartial" model="@Model.Player"/>
+<div class="container bg-gradient rounded">
+    <div class="row">
+        @if (@Model.Items is not null)
+        {
+            @foreach (var item in @Model.Items)
+            {
+                <partial name="InventoryPartial" model="item"/>
+            }
+
+        }
+        
+    </div>
+</div>

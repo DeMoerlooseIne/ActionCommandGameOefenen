@@ -1,0 +1,21 @@
+﻿@model User?
+<div class="row text-center">
+    @if (User.Identity is not null && User.Identity.IsAuthenticated)
+    {
+        <div class="col-3">
+            <a type="button" class="btn redTextWithHover" asp-controller="Game" asp-action="PickPlayer" asp-route-id=""> You have: @Model.Players.Count Players</a>
+        </div>
+        <div class="col-6"><a type="button" class="btn redTextWithHover" asp-action="Index" asp-route-id="">Let's Mine</a></div>
+        <div class="col-3"><a type="button" class="btn redTextWithHover" asp-controller="Game" asp-action="LeaderBoard" asp-route-id="">Leader board</a>
+
+            <a type="button" class="btn redTextWithHover" asp-controller="Account" asp-action="Logout" asp-route-id="">Logout</a>
+
+        </div>
+        <br/>
+    }
+    else
+        {
+        <a type="button" class="btn redTextWithHover" asp-controller="Account" asp-action="Login" asp-route-id="">Login</a>
+        }
+    
+</div>

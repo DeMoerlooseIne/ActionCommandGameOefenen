@@ -1,0 +1,16 @@
+﻿@model ActionCommandGame.Services.Model.Results.PlayerResult
+<tr>
+    <td>
+        <div class="d-flex align-items-center">
+            <img src="@Model.ImageLocation" class="circle-img circle-img--small mr-2" alt="User Img">
+            <div class="user-info__basic">
+                <h5 class="mb-0">@Model.Name</h5>
+            </div>
+        </div>
+    </td>
+    <td>
+        <div class="d-flex align-items-end">
+            <h4 class="mr-1">@Model.Money €</h4>
+        </div>
+    </td>
+</tr>

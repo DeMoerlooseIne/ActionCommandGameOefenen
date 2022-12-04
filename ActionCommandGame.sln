@@ -35,17 +35,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{FC172E5F-1E61-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sdk", "Sdk", "{B47BD7B4-CFF8-472C-9E87-565981081551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Sdk", "ActionCommandGame.Sdk\ActionCommandGame.Sdk.csproj", "{E6F88C33-C8AC-49CA-9B58-28D42ABB7546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Sdk", "ActionCommandGame.Sdk\ActionCommandGame.Sdk.csproj", "{E6F88C33-C8AC-49CA-9B58-28D42ABB7546}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Sdk.Abstractions", "ActionCommandGame.Sdk.Abstractions\ActionCommandGame.Sdk.Abstractions.csproj", "{7FB92B45-F738-4F62-9BAF-9C453C3D510A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Sdk.Abstractions", "ActionCommandGame.Sdk.Abstractions\ActionCommandGame.Sdk.Abstractions.csproj", "{7FB92B45-F738-4F62-9BAF-9C453C3D510A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Abstractions", "ActionCommandGame.Abstractions\ActionCommandGame.Abstractions.csproj", "{DAC1134B-30E1-4D81-90AB-F45F291DC5EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Abstractions", "ActionCommandGame.Abstractions\ActionCommandGame.Abstractions.csproj", "{DAC1134B-30E1-4D81-90AB-F45F291DC5EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Helpers", "ActionCommandGame.Helpers\ActionCommandGame.Helpers.csproj", "{B346E28B-6ED2-434B-94B9-0F46794F019A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Helpers", "ActionCommandGame.Helpers\ActionCommandGame.Helpers.csproj", "{B346E28B-6ED2-434B-94B9-0F46794F019A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Extensions", "ActionCommandGame.Extensions\ActionCommandGame.Extensions.csproj", "{343D36DA-B068-4C01-AEE8-160A8423AE68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Extensions", "ActionCommandGame.Extensions\ActionCommandGame.Extensions.csproj", "{343D36DA-B068-4C01-AEE8-160A8423AE68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Api.Authentication.Model", "ActionCommandGame.Api.Authentication.Model\ActionCommandGame.Api.Authentication.Model.csproj", "{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionCommandGame.Api.Authentication.Model", "ActionCommandGame.Api.Authentication.Model\ActionCommandGame.Api.Authentication.Model.csproj", "{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionCommandGame.Ui.BlazorApp", "ActionCommandGame.Ui.BlazorApp\ActionCommandGame.Ui.BlazorApp.csproj", "{D56363F6-B274-4C3C-A795-FDC7B753B5E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56363F6-B274-4C3C-A795-FDC7B753B5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56363F6-B274-4C3C-A795-FDC7B753B5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56363F6-B274-4C3C-A795-FDC7B753B5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56363F6-B274-4C3C-A795-FDC7B753B5E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -138,6 +144,7 @@ Global
 		{B346E28B-6ED2-434B-94B9-0F46794F019A} = {22A8CF6D-C62B-4DB6-9C86-576AED75704B}
 		{343D36DA-B068-4C01-AEE8-160A8423AE68} = {22A8CF6D-C62B-4DB6-9C86-576AED75704B}
 		{84A83AB7-43DB-4CCE-B30D-E3A26B9F697E} = {119E338A-E51B-4058-8855-1E6CC59351F3}
+		{D56363F6-B274-4C3C-A795-FDC7B753B5E0} = {FC172E5F-1E61-488B-9934-91D1C73AFD45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF43B065-5545-4453-A97F-781AE33CE7DC}

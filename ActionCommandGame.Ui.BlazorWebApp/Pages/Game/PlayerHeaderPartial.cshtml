@@ -1,0 +1,13 @@
+﻿@model ActionCommandGame.Services.Model.Results.PlayerResult
+<div class="row text-center">
+    <div class="col-4">
+        <a type="button" class="btn redTextWithHover"  asp-controller="Game" asp-action="Inventory">Inventory</a>
+        <a type="button" class="btn redTextWithHover" asp-controller="Game" asp-action="Shop"> Shop, you have: €@Model.Money</a>
+    </div>
+
+    <div class="col-4"><a type="button" class="btn redTextWithHover" asp-action="Index" asp-route-playerID="@Model.Id">Let's Mine</a></div>
+    <div class="col-4"><a type="button" class="btn redTextWithHover"  asp-controller="Game" asp-action="LeaderBoard" asp-route-id="">Leader board</a>
+        <a type="button" class="btn redTextWithHover"  asp-controller="Account" asp-action="Logout">Logout</a></div><br/>
+    <div class="col-3">
+    </div>
+</div>

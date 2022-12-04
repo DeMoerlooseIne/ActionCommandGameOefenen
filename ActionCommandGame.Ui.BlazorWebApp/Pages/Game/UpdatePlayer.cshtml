@@ -1,0 +1,52 @@
+﻿@using ActionCommandGame.Services.Model.Requests
+@using System.Collections
+@model CreatePlayerRequest
+@{
+
+    var files = new List<string>{
+        "../images/playerImage_01.png",
+        "../images/playerImage_02.png",
+        "../images/playerImage_03.png",
+        "../images/playerImage_04.png"
+
+    };
+}
+
+<div asp-validation-summary="ModelOnly"></div>
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Sign up</h3>
+            </div>
+            <div class="card-body Accountfitter">
+                <form method="post">
+                    @foreach (var imageLocation in files)
+                    {
+                        <label>
+                            <input type="radio" asp-for="ImageLocation" value="@imageLocation" checked>
+                            <img src="@imageLocation">
+                        </label>
+                    }
+                    <span asp-validation-for="ImageLocation"></span>
+                    <div class="input-group login-margin">
+                        <div class="input-group-prepend">
+                            <label asp-for="Name">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span></label>
+                        </div>
+                        <label></label>
+                        <input asp-for="Name" placeholder="user name" class="form-control">
+                        <span asp-validation-for="Name"></span>
+
+                    </div>
+
+
+                    <div class="login-margin">
+                        <input type="submit" value="@ViewData["submit_Button"]" class="btn float-end login_btn">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>

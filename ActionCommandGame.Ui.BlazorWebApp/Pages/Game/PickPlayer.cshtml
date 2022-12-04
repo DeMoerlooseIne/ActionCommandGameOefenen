@@ -1,0 +1,29 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Pick Player";
+    var playerList = @Model.Players;
+    
+}
+
+
+<div class="container-fluid row">
+    <h4 class="yellowText">All Players of @Model.UserName</h4>
+    <a asp-action="CreatePlayer" class="btn Playerbtn redTextWithHover">Make new Player</a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="yellowText">Player</th>
+            <th class="yellowText">Cash</th>
+            <th class="yellowText">Use player</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var player in playerList)
+        {
+            <partial name="PickPlayerRowPartial" model="player"/>
+        }
+            
+        </tbody>
+    </table>	
+    
+</div>

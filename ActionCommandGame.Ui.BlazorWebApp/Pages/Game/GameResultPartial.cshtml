@@ -1,0 +1,30 @@
+﻿@using ActionCommandGame.Services.Model.Results
+@model GameResult
+
+<div>
+    
+    @if (@Model.NegativeGameEvent is not null)
+    {
+        <h3 class="redText">Negative event happened</h3>
+        <h4 class="redText">@Model.NegativeGameEvent.Description</h4>
+        <p class="redText">you have lost @Model.NegativeGameEvent.DefenseLoss defense </p>
+    }
+    @if (@Model.PositiveGameEvent is not null)
+    {
+        <h3 class="redText">Positive event happened</h3>
+        <h4 class="redText">@Model.PositiveGameEvent.Description</h4>
+        <p class="redText">you have gained @Model.PositiveGameEvent.Money Cash,@Model.PositiveGameEvent.Experience </p>
+    }
+    
+    @if (@Model.NegativeGameEventMessages is not null)
+    {
+        @foreach (var message in @Model.NegativeGameEventMessages)
+        {
+
+            <p class="redText">@message.Message</p>
+        }
+    }
+    
+    
+
+</div>
